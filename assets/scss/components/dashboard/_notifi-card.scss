@@ -6,34 +6,36 @@
     margin: 0 auto;
     overflow: hidden;
     padding: 5px;
+    background-color: $white;
+
     @include mq('xxl') {
-        width: 100%;
+        width: 90%;
         height: calcRem(155);
     }
 
     i {
-        display: block; 
+        display: block;
         margin: 5px 0;
         padding-#{$right}: 20px;
-        font-size: calcRem(30);  
+        font-size: calcRem(30);
         color: $second-color;
-    } 
+    }
 
     .title {
         text-align: center;
         font-family: 'sst';
-        color: $white;
+        color: $text-color;
 
         h2 {
             font-size: calcRem(30);
             @include ellipse-rows(1);
-
+            color: $text-color!important;
         }
 
         p {
             font-size: calcRem(17);
             @include ellipse-rows(2);
-
+            color: $text-color!important;
         }
     }
 

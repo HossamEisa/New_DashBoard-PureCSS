@@ -4,15 +4,15 @@
 .dash-header {
   position: relative;
   z-index: 7;
-  padding: 15px calcRem(30);
+  padding: 15px 1.666667rem 15px 2.4rem;
 
   // border-bottom: 2px solid #fff;
   .burger-icon span {
-    background-color: $white;
+    background-color: $second-color;
 
     &::after,
     &::before {
-      background-color: $white;
+      background-color: $second-color;
     }
 
     &:hover {
@@ -56,7 +56,7 @@
 
     .logo-title {
       padding-#{$right}: 15px;
-      color: $white;
+      color: $text-color;
 
       h6 {
         font-size: calcRem(16);
@@ -138,9 +138,9 @@
     position: relative;
 
     .counter {
-      background-color: #d5503d;
-      width: 20px;
-      height: 17px;
+      background-color: #D5503D;
+      width: 19px;
+      height: 16px;
       border-radius: 7px;
       position: absolute;
       top: 6px;
@@ -149,6 +149,7 @@
       font-size: 12px;
       display: flex;
       align-items: center;
+      color: $white;
       justify-content: center;
     }
   }
@@ -190,8 +191,7 @@
 
 .dash-date {
   font-size: calcRem(12.6);
-  opacity: 0.5;
-  color: $white;
+  color: $text-color;
 
   @include mq('lg') {
     margin-#{$left}: calcRem(50);
@@ -217,8 +217,8 @@
 
   .nice-select {
     border: none !important;
-    background-color: #414141;
-    padding: 0 20px;
+    background-color: $second-color;
+    padding: 0 25px;
     height: 26px;
     font-size: .8888888889rem;
     border-radius: 50px;
@@ -226,6 +226,13 @@
     border-bottom-#{$left}-radius: 0;
     line-height: 1.6rem;
     font-size: 0.8rem;
+    .current {
+      color: $white;
+    }
+    &::after {
+      border-color: $white;
+      #{$left}: 10px;
+    }
   }
 
   .select2-dropdown {

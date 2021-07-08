@@ -141,7 +141,7 @@
 
 .progress {
     height: 10px;
-    background-color: #8c8683;
+    background-color: #E1E1E1;
 }
 
 .progress-bar-brand {
@@ -150,8 +150,8 @@
 }
 
 .rounded-shape {
-    background-color: #F2F2F2;
-    border-radius: 5px;
+    background-color: $white;
+    border-radius: $border-radius!important;
     border-top-#{$left}-radius: 35px;
     padding: calcRem(20) calcRem(28);
 
@@ -295,11 +295,13 @@
 .search-small-form {
     max-height: 0;
     visibility: hidden;
+
     .input-nice-select {
         border: none;
         border-right: 1px solid #e5e3ee;
         border-radius: 0;
     }
+
     &.active {
         max-height: 500px;
         visibility: visible;
@@ -384,11 +386,11 @@
         height: 3px;
         min-height: 3px;
         width: 100%;
-        background-color: $white;
+        background-color: $second-color;
 
         &:before,
         &::after {
-            background-color: #fff;
+            background-color: $second-color;
             position: absolute;
             display: block;
             height: 3px;
@@ -418,6 +420,7 @@
         }
     }
 }
+
 .draggable-handle {
     cursor: move;
     color: #ccc;
@@ -427,9 +430,12 @@
 .card {
     border: 0;
 }
-.delete-icon,.draggable-handle  {
+
+.delete-icon,
+.draggable-handle {
     color: #ccc;
     font-size: 1.2222222222rem;
+
     &:hover {
         color: $second-color;
     }

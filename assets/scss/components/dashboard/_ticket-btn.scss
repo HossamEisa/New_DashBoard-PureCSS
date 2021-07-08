@@ -6,15 +6,11 @@
     width: 100%;
     padding: calcRem(20) calcRem(10);
     justify-content: space-between;
-    color: $white;
+    color: $dark;
     text-decoration: none;
+    background-color: $white;
 
-    &:hover {
-        background-color: $second-color;
-        color: $white; 
-        text-decoration: none;
 
-    }
 
     .title {
         h6 {
@@ -38,11 +34,24 @@
     svg {
         width: 30px;
         height: 40px;
-
+        path {
+            fill: $second-color;
+        }
         @include mq('xxl') {
             width: inherit;
             max-height: 60px;
             height: auto;
+        }
+    }
+
+    &:hover {
+        background-color: $second-color;
+        color: $white; 
+        text-decoration: none;
+        svg {
+            path {
+                fill: $white;
+            }
         }
     }
 }

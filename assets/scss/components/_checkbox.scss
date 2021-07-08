@@ -47,3 +47,16 @@
     height: 18px;
     top: 1px;
 }
+
+.checkbox > span {
+    background-color: #DFDFDF;
+}
+
+.checkbox>input:checked~span {
+    background-color: $second-color !important;
+
+    &::after {
+        border-color: $white;
+    }
+
+}

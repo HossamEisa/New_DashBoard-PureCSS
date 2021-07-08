@@ -8,6 +8,18 @@
     }
 }
 
+.btn-primary {
+    color: $white;
+    background-color: $second-color;
+    border-color: $second-color;
+
+    &:hover {
+        border-color: $second-color;
+        background-color: transparent;
+        color: $second-color;
+    }
+}
+
 .btn-success {
     color: #FFFFFF;
     background-color: #0BB783;

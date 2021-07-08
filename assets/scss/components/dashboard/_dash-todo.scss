@@ -36,19 +36,14 @@
             width: 23px;
         }
 
-        .checkbox.checkbox-babyblue>span {
-            background-color: rgb(131 205 235 / 0.5);
-        }
-
-        .checkbox>input:checked~span {
-            background-color: #83CDEB !important;
-
-            &::after {
-                border-color: #000000;
-            }
-
-        }
+     
 
     }
 }
 
+
+.undertodolist {
+    .ticket-btn {
+        background: transparent;
+    }
+}

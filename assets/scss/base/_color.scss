@@ -46,8 +46,9 @@
 }
 
 .second-color {
-  color: #E3B472!important;
+  color: $second-color !important;
 }
+
 /////////////////////////
 // White Color
 /////////////////////////
@@ -82,7 +83,7 @@
 }
 
 .blue-color {
-  color: #007CB0!important;
+  color: #007CB0 !important;
 }
 
 // /////////////////////////////////// BackGrounds Colors //////////////////////////////////////////
@@ -95,7 +96,7 @@
   background: blue !important;
   color: $white !important;
 
-  > span[class^="icon"] {
+  >span[class^="icon"] {
     color: $white !important;
 
     &::before {
@@ -112,7 +113,7 @@
   background: $brand-color !important;
   color: $white !important;
 
-  > span {
+  >span {
     &::before {
       color: $white !important;
     }
@@ -135,18 +136,21 @@
 }
 
 .bg-warning {
-  background: #d2ac34 !important;
+  background: #a09e97 !important;
 }
 
 .bg-danger {
-    background: $invalid-color !important;
-  }
-  .bg-grey {
-    background: #F3F3F3 !important;
-  }
-  .bg-second {
-    background: #E3B472 !important;
-  }
-  .text-muted {
-    color: #B5B5C3 !important;
-  }
+  background: $invalid-color !important;
+}
+
+.bg-grey {
+  background: #F3F3F3 !important;
+}
+
+.bg-second {
+  background:  $second-color !important;
+}
+
+.text-muted {
+  color: #B5B5C3 !important;
+}

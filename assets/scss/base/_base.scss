@@ -24,9 +24,11 @@ body {
 	box-sizing: border-box;
 	color: $text-color;
 	font-family: $droid;
-	background-color: $brand-color;
+	// background-color: $brand-color;
+	background: url(../images/bg.png) center center/cover no-repeat #F2F2F2;
 	text-align: #{$right};
 	line-height: 1.5;
+	color: $dark;
 }
 
 ::selection {

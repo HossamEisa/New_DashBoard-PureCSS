@@ -195,7 +195,7 @@ jQuery(document).ready(function ($) {
             weekday: 'long',
             year: 'numeric'
         }).format(Date.now());
-    $('.dash-date .hejri').text(gregorianDate + ' || ');
+    $('.dash-date .hejri').text(gregorianDate + ' - ');
     $('.dash-date .melady').text(HejriDate);
-    
+
 });

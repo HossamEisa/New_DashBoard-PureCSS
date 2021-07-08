@@ -87,11 +87,12 @@
         padding: 10px;
         border-radius: 8px;
         background-color: $white;
-        color: #364C2B;
+        color: $text-color;
         font-family: ges-m;
 
         &:hover {
             background-color: $second-color;
+            color: $white;
         }
 
         .title {

@@ -12,10 +12,11 @@
         justify-content: center;
         font-size: 16px;
         &.active {
-                background-color: #E3B472!important;
+                background-color: $second-color!important;
+                color: $white;
         }
         &:hover {
-            background-color: #E3B472!important;
+            background-color: $second-color!important;
             color: $white;
         }   
     }

@@ -1,7 +1,8 @@
 .title-ban-g {
-    background: linear-gradient(60deg, #524B42 0, #7a9ead 30%, #83CDEB 80%);
-    padding: 15px;
-
+    background: $second-color;
+    padding: 1.2rem 1rem;
+    border-top-right-radius: 30px!important;
+    border-top-left-radius: 30px!important;
     .title-content {
         display: flex;
         align-items: center;

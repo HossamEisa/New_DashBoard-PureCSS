@@ -1,8 +1,8 @@
 .events-block {
-    background: linear-gradient(90deg, #D1E3EB 10%, #ffffff 70%);
+    background: $white;
     padding: calcRem(10);
     position: relative;
-    border-radius: 8px;
+    border-radius: $border-radius;
     &::after {
         position: absolute;
         content: "";

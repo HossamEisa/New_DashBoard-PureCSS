@@ -28,8 +28,7 @@
     }
 
     .dash-sidebar {
-        background: #5F534C;
-        background: linear-gradient(180deg, #5F534C 40%, #524842 60%, #000000 100%);
+        background: $white;
         background-size: 200% auto;
         height: 100%;
         width: calcRem(270);
@@ -81,11 +80,11 @@
                     display: flex;
                     align-items: center;
                     height: calcRem(56);
-                    border-bottom: 1px solid rgb(255 255 255 / 0.05);
+                    border-bottom: 1px solid rgb(0 0 0 / 11%);
                     margin: 0 8px;
                     font-size: calcRem(15);
                     font-family: $droid;
-                    color: $white;
+                    color: $text-color;
                     z-index: 3;
                     position: relative;
 
@@ -188,10 +187,14 @@
                 }
 
                 &:hover {
+                    a {
+                        color: $white;
+                    }
+
                     &::after {
                         position: absolute;
                         content: "";
-                        background-color: #E7B74F;
+                        background-color: $second-color;
                         height: calcRem(40);
                         top: calcRem(10);
                         #{$right}: 0;
@@ -204,10 +207,13 @@
                 }
 
                 &.active {
+                    a {
+                        color: $white;
+                    }
                     &::after {
                         position: absolute;
                         content: "";
-                        background-color: #E7B74F;
+                        background-color: $second-color;
                         height: calcRem(40);
                         top: calcRem(10);
                         #{$right}: 0;
@@ -225,14 +231,15 @@
         .tec-support {
             display: block;
             border-radius: 35.57px;
-            border: 4px solid #e7b74f;
+            border: 4px solid $second-color;
             text-align: center;
             padding: 15px 30px;
-            color: #fff;
+            color: $text-color;
             margin: 30px;
 
             &:hover {
-                background-color: #c3a35c;
+                background-color:  $second-color;
+                color: $white
             }
         }
 

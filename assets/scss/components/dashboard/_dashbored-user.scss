@@ -1,5 +1,5 @@
 .dash-user {
-    background-color: #F2F2F2;
+    background-color: $white;
     border-radius: 5px;
     border-top-#{$left}-radius: 35px;
     overflow: hidden;
@@ -97,9 +97,9 @@
         height: 100px;
         color: $white;
         display: flex;
-        padding: 10px;
+        padding: 15px 25px;
         align-items: center;
-        border-radius: 5px;
+        border-radius: $border-radius;
 
         h2 {
             font-size: calcRem(18);

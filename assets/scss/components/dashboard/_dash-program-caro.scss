@@ -29,13 +29,13 @@
 }
 
 .dash-warning-carousel {
-    background: linear-gradient(60deg, #524B42 0, #7a9ead 30%, #83CDEB 80%);
+    background: $second-color;
     padding: calcRem(15) calcRem(20);
     border-radius: 34px;
     color: $white;
 
     .alrets {
-        color: $dark;
+        color: $white;
         font-size: calcRem(24);
     }
 
@@ -57,12 +57,16 @@
     .caro-control {
         display: flex;
         align-items: center;
+
+        a {
+            color: $white;
+        }
     }
 }
 
 .dash-ingaz-carousel {
     position: relative;
-    background-color: #5F534C;
+    background-color: $white;
     padding: calcRem(20) 25px;
     border-radius: 5px;
     border-top-#{$right}-radius: 35px;
@@ -78,7 +82,7 @@
     .content-d {
         h2 {
             font-size: calcRem(24);
-            color: $white;
+            color: $text-color;
 
         }
     }
@@ -90,13 +94,17 @@
     .carousel-indicators {
         bottom: -49px;
     }
+
+   
 }
 
 
 .last-small-carousel {
     margin-top: 10px;
+
     .icon {
         margin-#{$left}: 15px;
+
         i {
             font-size: calcRem(40);
             color: $dark;
@@ -118,16 +126,16 @@
     .carousel-indicators {
         bottom: -40px;
 
-        li {
-            background-color: #261B15;
-            opacity: 0.5;
+        // li {
+        //     background-color: #261B15;
+        //     opacity: 0.5;
 
-            &.active {
-                background-color: #261B15;
-                opacity: 1;
+        //     &.active {
+        //         background-color: #261B15;
+        //         opacity: 1;
 
-            }
-        }
+        //     }
+        // }
     }
 }
 
@@ -136,5 +144,16 @@
         width: 10px;
         height: 10px;
         border-radius: 50%;
+        background-color: rgb(38 27 21 / 20%);
+
+    }
+    .active {
+        background-color: $second-color;
+    }
+}
+.cnt {
+    a {
+        color: $second-color;
+        font-size: 1.5rem;
     }
 }

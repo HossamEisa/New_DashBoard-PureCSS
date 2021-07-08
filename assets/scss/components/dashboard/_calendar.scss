@@ -84,6 +84,9 @@
             padding-top: 2.188rem;
             color: $mid-grey;
             text-align: center;
+            font-weight: bold;
+            font-family: sans-serif;
+            text-transform: capitalize;
         }
 
         td {
@@ -128,9 +131,8 @@
 
                 &:hover {
                     .date-day {
-                        background: $mid-grey;
+                        background: $second-color;
                         color: $white;
-                        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .15);
                     }
                 }
 
@@ -151,7 +153,7 @@
                     pointer-events: none;
 
                     .date-day {
-                        background-color: $second-color;
+                        border: 1px solid $second-color;
                     }
                 }
 
