@@ -1,0 +1,25 @@
+.btn-warning {
+    background-color: $warning-color;
+    border-color: $warning-color;
+    color: #fff;
+
+    &:hover {
+        color: #fff;
+    }
+}
+
+.btn-success {
+    color: #FFFFFF;
+    background-color: #0BB783;
+    border-color: #0BB783;
+
+    &:hover {
+        border-color: #0BB783;
+        background-color: transparent;
+        color: #0BB783;
+    }
+}
+
+.btn-outline-warning {
+    color: $white;
+}

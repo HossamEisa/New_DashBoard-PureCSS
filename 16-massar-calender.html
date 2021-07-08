@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <title>Alwaheen Portal</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+	<link href="assets/css/all.min.css" rel="stylesheet" type="text/css" />
+	<link href="assets/css/bootstrap-RTL.min.css" rel="stylesheet" type="text/css" />
+	<link href="assets/css/style-dashboard-rtl.min.css" rel="stylesheet" type="text/css" />
+    <style>
+        .fancybox-content {
+            width: 100vw !important;
+            height: 100% !important;
+        }
+
+        .fancybox-is-open .fancybox-bg {
+            opacity: 1;
+        }
+
+        .fancybox-slide {
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body id="body">
+    <span class=" d-none" id="clickarea"></span>
+    <div class="wrapper overflow-hidden" id="wrapper">
+        <!-- <div class="container">
+            <ul class="breadcrumb-container">
+                <div class="breadcrumb breadcrumb--mb-0">
+                    <li class="breadcrumb__item">
+                        <a class="breadcrumb__link" href="#">الرئيسية</a>
+                        <i class="fa fa-arrow-left breadcrumb__link-icon"></i>
+                    </li>
+                    <li class="breadcrumb__item">
+                        <a class="breadcrumb__link" href="#">برنامج حفظ القرأن </a>
+                        <i class="fa fa-arrow-left breadcrumb__link-icon"></i>
+                    </li>
+                </div>
+            </ul>
+        </div> -->
+
+        <main class="container massar">
+            <h2 class="massar__heading">المسار التعليمي</h2>
+            <div class="massar__toggle-days">
+                <h2 class="massar__toggle-days__next">
+                    <span><i class="fa fa-angle-double-right"></i><span>اليوم التالي</span> <span>2021-01-19 </span>
+                    </span>
+                </h2>
+                <h2 class="massar__toggle-days__prev">
+                    <span><span>اليوم السابق</span> <span>2021-01-19 </span> <i
+                            class="fa fa-angle-double-left"></i></span>
+                </h2>
+            </div>
+
+            <div class="massar__calender">
+                <div class="massar__calender__days">
+                    <div class="massar__calender__day">
+                        <div class="massar__calender__day__header">
+                            <h2>
+                                <span class="massar__calender__day__number">1</span>
+                                <span class="massar__calender__day__name">الجمعة</span>
+                            </h2>
+                            <i class="fa fa-angle-double-left"></i>
+                        </div>
+                        <div class="massar__calender__day__body">
+                            <div class="massar__lectures">
+                                <div class="massar__lecture massar__lecture--in-progress">
+                                    <h2 class="massar__lecture__heading">اسم الدورة الأولي</h2>
+                                    <h2 class="massar__lecture__heading-1">اسم الدورة الأولي</h2>
+                                    <a href="" class="massar__lecture__attachment">
+                                        <input class="massar__lecture__check" type="checkbox" name="lecture"
+                                            id="lecture">
+                                        <img class="massar__lecture__image" src="./assets/images/video.svg" alt="PDF">
+                                        <h2 class="massar__lecture__name">
+                                            محاضرات pdf
+                                            <span class="massar__lecture__duration">02:00</span>
+                                        </h2>
+                                    </a>
+                                </div>
+                                <div class="massar__lecture massar__lecture--done">
+                                    <h2 class="massar__lecture__heading">اسم الدورة الأولي</h2>
+                                    <h2 class="massar__lecture__heading-1">اسم الدورة الأولي</h2>
+                                    <a href="" class="massar__lecture__attachment">
+                                        <input class="massar__lecture__check" type="checkbox" name="lecture"
+                                            id="lecture">
+                                        <img class="massar__lecture__image" src="./assets/images/video.svg" alt="PDF">
+                                        <h2 class="massar__lecture__name">
+                                            محاضرات pdf
+                                            <span class="massar__lecture__duration">02:00</span>
+                                        </h2>
+                                    </a>
+                                </div>
+                                <div class="massar__lecture">
+                                    <h2 class="massar__lecture__heading">اسم الدورة الأولي</h2>
+                                    <h2 class="massar__lecture__heading-1">اسم الدورة الأولي</h2>
+                                    <a href="" class="massar__lecture__attachment">
+                                        <input class="massar__lecture__check" type="checkbox" name="lecture"
+                                            id="lecture">
+                                        <img class="massar__lecture__image" src="./assets/images/pdf.svg" alt="PDF">
+                                        <h2 class="massar__lecture__name">
+                                            محاضرات pdf
+                                            <span class="massar__lecture__duration">02:00</span>
+                                        </h2>
+                                    </a>
+                                </div>
+                                <div class="massar__lecture massar__lecture--coming">
+                                    <h2 class="massar__lecture__heading">اسم الدورة الأولي</h2>
+                                    <h2 class="massar__lecture__heading-1">اسم الدورة الأولي</h2>
+                                    <a href="" class="massar__lecture__attachment">
+                                        <input class="massar__lecture__check" type="checkbox" name="lecture"
+                                            id="lecture">
+                                        <img class="massar__lecture__image" src="./assets/images/pdf.svg" alt="PDF">
+                                        <h2 class="massar__lecture__name">
+                                            محاضرات pdf
+                                            <span class="massar__lecture__duration">02:00</span>
+                                        </h2>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="massar__calender__day">
+                        <div class="massar__calender__day__header">
+                            <h2>
+                                <span class="massar__calender__day__number">03</span>
+                                <span class="massar__calender__day__name">الاربعاء</span>
+                            </h2>
+                            <i class="fa fa-angle-double-left"></i>
+                        </div>
+                        <div class="massar__calender__day__body">
+                            <div class="massar__lectures">
+                                <h2 class="massar__calender__no-data">لا توجد بيانات</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="massar__calender__day">
+                        <div class="massar__calender__day__header">
+                            <h2>
+                                <span class="massar__calender__day__number">14</span>
+                                <span class="massar__calender__day__name">الاحد</span>
+                            </h2>
+                            <i class="fa fa-angle-double-left"></i>
+                        </div>
+                        <div class="massar__calender__day__body">
+                            <div class="massar__lectures">
+                                <div class="massar__lecture massar__lecture--in-progress">
+                                    <h2 class="massar__lecture__heading">اسم الدورة الأولي</h2>
+                                    <h2 class="massar__lecture__heading-1">اسم الدورة الأولي</h2>
+                                    <a href="" class="massar__lecture__attachment">
+                                        <input class="massar__lecture__check" type="checkbox" name="lecture"
+                                            id="lecture">
+                                        <img class="massar__lecture__image" src="./assets/images/pdf.svg" alt="PDF">
+                                        <h2 class="massar__lecture__name">
+                                            محاضرات pdf
+                                            <span class="massar__lecture__duration">02:00</span>
+                                        </h2>
+                                    </a>
+                                </div>
+                                <div class="massar__lecture massar__lecture--done">
+                                    <h2 class="massar__lecture__heading">اسم الدورة الأولي</h2>
+                                    <h2 class="massar__lecture__heading-1">اسم الدورة الأولي</h2>
+                                    <a href="" class="massar__lecture__attachment">
+                                        <input class="massar__lecture__check" type="checkbox" name="lecture"
+                                            id="lecture">
+                                        <img class="massar__lecture__image" src="./assets/images/video.svg" alt="PDF">
+                                        <h2 class="massar__lecture__name">
+                                            محاضرات pdf
+                                            <span class="massar__lecture__duration">02:00</span>
+                                        </h2>
+                                    </a>
+                                </div>
+                                <div class="massar__lecture">
+                                    <h2 class="massar__lecture__heading">اسم الدورة الأولي</h2>
+                                    <h2 class="massar__lecture__heading-1">اسم الدورة الأولي</h2>
+                                    <a href="" class="massar__lecture__attachment">
+                                        <input class="massar__lecture__check" type="checkbox" name="lecture"
+                                            id="lecture">
+                                        <img class="massar__lecture__image" src="./assets/images/video.svg" alt="PDF">
+                                        <h2 class="massar__lecture__name">
+                                            محاضرات pdf
+                                            <span class="massar__lecture__duration">02:00</span>
+                                        </h2>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="massar__calender__day">
+                        <div class="massar__calender__day__header">
+                            <h2>
+                                <span class="massar__calender__day__number">1</span>
+                                <span class="massar__calender__day__name">الجمعة</span>
+                            </h2>
+                            <i class="fa fa-angle-double-left"></i>
+                        </div>
+                        <div class="massar__calender__day__body">
+                            <div class="massar__lectures">
+                                <div class="massar__lecture massar__lecture--in-progress">
+                                    <h2 class="massar__lecture__heading">اسم الدورة الأولي</h2>
+                                    <h2 class="massar__lecture__heading-1">اسم الدورة الأولي</h2>
+                                    <a href="" class="massar__lecture__attachment">
+                                        <input class="massar__lecture__check" type="checkbox" name="lecture"
+                                            id="lecture">
+                                        <img class="massar__lecture__image" src="./assets/images/video.svg" alt="PDF">
+                                        <h2 class="massar__lecture__name">
+                                            محاضرات pdf
+                                            <span class="massar__lecture__duration">02:00</span>
+                                        </h2>
+                                    </a>
+                                </div>
+                                <div class="massar__lecture massar__lecture--done">
+                                    <h2 class="massar__lecture__heading">اسم الدورة الأولي</h2>
+                                    <h2 class="massar__lecture__heading-1">اسم الدورة الأولي</h2>
+                                    <a href="" class="massar__lecture__attachment">
+                                        <input class="massar__lecture__check" type="checkbox" name="lecture"
+                                            id="lecture">
+                                        <img class="massar__lecture__image" src="./assets/images/video.svg" alt="PDF">
+                                        <h2 class="massar__lecture__name">
+                                            محاضرات pdf
+                                            <span class="massar__lecture__duration">02:00</span>
+                                        </h2>
+                                    </a>
+                                </div>
+                                <div class="massar__lecture">
+                                    <h2 class="massar__lecture__heading">اسم الدورة الأولي</h2>
+                                    <h2 class="massar__lecture__heading-1">اسم الدورة الأولي</h2>
+                                    <a href="" class="massar__lecture__attachment">
+                                        <input class="massar__lecture__check" type="checkbox" name="lecture"
+                                            id="lecture">
+                                        <img class="massar__lecture__image" src="./assets/images/video.svg" alt="PDF">
+                                        <h2 class="massar__lecture__name">
+                                            محاضرات pdf
+                                            <span class="massar__lecture__duration">02:00</span>
+                                        </h2>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="massar__calender__day">
+                        <div class="massar__calender__day__header">
+                            <h2>
+                                <span class="massar__calender__day__number">1</span>
+                                <span class="massar__calender__day__name">الجمعة</span>
+                            </h2>
+                            <i class="fa fa-angle-double-left"></i>
+                        </div>
+                        <div class="massar__calender__day__body">
+                            <div class="massar__lectures">
+                                <div class="massar__lecture massar__lecture--in-progress">
+                                    <h2 class="massar__lecture__heading">اسم الدورة الأولي</h2>
+                                    <h2 class="massar__lecture__heading-1">اسم الدورة الأولي</h2>
+                                    <a href="" class="massar__lecture__attachment">
+                                        <input class="massar__lecture__check" type="checkbox" name="lecture"
+                                            id="lecture">
+                                        <img class="massar__lecture__image" src="./assets/images/video.svg" alt="PDF">
+                                        <h2 class="massar__lecture__name">
+                                            محاضرات pdf
+                                            <span class="massar__lecture__duration">02:00</span>
+                                        </h2>
+                                    </a>
+                                </div>
+                                <div class="massar__lecture massar__lecture--done">
+                                    <h2 class="massar__lecture__heading">اسم الدورة الأولي</h2>
+                                    <h2 class="massar__lecture__heading-1">اسم الدورة الأولي</h2>
+                                    <a href="" class="massar__lecture__attachment">
+                                        <input class="massar__lecture__check" type="checkbox" name="lecture"
+                                            id="lecture">
+                                        <img class="massar__lecture__image" src="./assets/images/video.svg" alt="PDF">
+                                        <h2 class="massar__lecture__name">
+                                            محاضرات pdf
+                                            <span class="massar__lecture__duration">02:00</span>
+                                        </h2>
+                                    </a>
+                                </div>
+                                <div class="massar__lecture">
+                                    <h2 class="massar__lecture__heading">اسم الدورة الأولي</h2>
+                                    <h2 class="massar__lecture__heading-1">اسم الدورة الأولي</h2>
+                                    <a href="" class="massar__lecture__attachment">
+                                        <input class="massar__lecture__check" type="checkbox" name="lecture"
+                                            id="lecture">
+                                        <img class="massar__lecture__image" src="./assets/images/video.svg" alt="PDF">
+                                        <h2 class="massar__lecture__name">
+                                            محاضرات pdf
+                                            <span class="massar__lecture__duration">02:00</span>
+                                        </h2>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="massar__calender__day">
+                        <div class="massar__calender__day__header">
+                            <h2>
+                                <span class="massar__calender__day__number">1</span>
+                                <span class="massar__calender__day__name">الجمعة</span>
+                            </h2>
+                            <i class="fa fa-angle-double-left"></i>
+                        </div>
+                        <div class="massar__calender__day__body">
+                            <div class="massar__lectures">
+                                <div class="massar__lecture massar__lecture--in-progress">
+                                    <h2 class="massar__lecture__heading">اسم الدورة الأولي</h2>
+                                    <h2 class="massar__lecture__heading-1">اسم الدورة الأولي</h2>
+                                    <a href="" class="massar__lecture__attachment">
+                                        <input class="massar__lecture__check" type="checkbox" name="lecture"
+                                            id="lecture">
+                                        <img class="massar__lecture__image" src="./assets/images/video.svg" alt="PDF">
+                                        <h2 class="massar__lecture__name">
+                                            محاضرات pdf
+                                            <span class="massar__lecture__duration">02:00</span>
+                                        </h2>
+                                    </a>
+                                </div>
+                                <div class="massar__lecture massar__lecture--done">
+                                    <h2 class="massar__lecture__heading">اسم الدورة الأولي</h2>
+                                    <h2 class="massar__lecture__heading-1">اسم الدورة الأولي</h2>
+                                    <a href="" class="massar__lecture__attachment">
+                                        <input class="massar__lecture__check" type="checkbox" name="lecture"
+                                            id="lecture">
+                                        <img class="massar__lecture__image" src="./assets/images/video.svg" alt="PDF">
+                                        <h2 class="massar__lecture__name">
+                                            محاضرات pdf
+                                            <span class="massar__lecture__duration">02:00</span>
+                                        </h2>
+                                    </a>
+                                </div>
+                                <div class="massar__lecture">
+                                    <h2 class="massar__lecture__heading">اسم الدورة الأولي</h2>
+                                    <h2 class="massar__lecture__heading-1">اسم الدورة الأولي</h2>
+                                    <a href="" class="massar__lecture__attachment">
+                                        <input class="massar__lecture__check" type="checkbox" name="lecture"
+                                            id="lecture">
+                                        <img class="massar__lecture__image" src="./assets/images/video.svg" alt="PDF">
+                                        <h2 class="massar__lecture__name">
+                                            محاضرات pdf
+                                            <span class="massar__lecture__duration">02:00</span>
+                                        </h2>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div class="dash-pagination d-flex flex-wrap py-2 mr-3 justify-content-center">
+            <a href="#" class="btn btn-icon btn-circle btn-sm  mr-2 my-1">
+                <i class="fas fa-chevron-right"></i>
+            </a>
+            <a href="#" class="btn btn-icon btn-circle btn-sm border-0 margin-left active mr-2 my-1">24</a>
+            <a href="#" class="btn btn-icon btn-circle btn-sm border-0 margin-left mr-2 my-1">25</a>
+            <a href="#" class="btn btn-icon btn-circle btn-sm border-0 margin-left mr-2 my-1">26</a>
+
+            <a href="#" class="btn btn-icon btn-circle btn-sm border-0 margin-left mr-2 my-1">...</a>
+            <a href="#" class="btn btn-icon btn-circle btn-sm border-0 margin-left mr-2 my-1">26</a>
+
+            <a href="#" class="btn btn-icon btn-circle btn-sm  mr-2 my-1">
+                <i class="fas fa-chevron-left"></i>
+            </a>
+        </div>
+     
+</body>
+
+</html>

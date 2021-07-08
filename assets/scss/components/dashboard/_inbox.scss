@@ -1,0 +1,33 @@
+.mail-sidebar {
+    svg {
+        path {
+            fill: #5F534C!important;
+            opacity: 1!important;
+        }
+    }
+}
+
+.mail-inbox {
+    @include mq('xxl') {
+        font-size: 15px;
+    }
+    .btn.btn-default i {
+        color: #5F534C;
+    }
+    .btn.btn-default .svg-icon svg g [fill] {
+        fill: #5F534C;
+    }
+}
+
+.label-brown {
+    background-color: #5F534C!important;
+    color: #ffffff!important;
+}
+.search-inbox {
+    border: 1px solid #5F534C;
+    background-color: transparent!important;
+    border-radius: 50px!important;
+    path {
+        opacity: 1;
+    }
+}

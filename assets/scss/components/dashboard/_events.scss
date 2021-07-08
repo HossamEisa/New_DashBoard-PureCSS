@@ -1,0 +1,32 @@
+.events-block {
+    background: linear-gradient(90deg, #D1E3EB 10%, #ffffff 70%);
+    padding: calcRem(10);
+    position: relative;
+    border-radius: 8px;
+    &::after {
+        position: absolute;
+        content: "";
+        background: url(../images/Butterflies.png);
+        background-size: contain;
+        width: 250px;
+        height: 280px; 
+        right: 50px;
+        top: 20px;
+        z-index: 1;
+        @include mq('md') {
+        width: 330px;
+        }
+    }
+    > .row {
+        position: relative;
+        z-index: 2;
+    }
+    .scroll-area {
+        max-height: calcRem(285);
+    }
+    .events-title {
+        color: #007CB0;
+        font-size: calcRem(24);
+    }
+   
+}

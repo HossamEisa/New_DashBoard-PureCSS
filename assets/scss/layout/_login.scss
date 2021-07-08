@@ -1,0 +1,36 @@
+.login-container {
+    background-color: $white;
+    width: 550px;
+    max-width: 90%;
+    margin: calcRem(50) auto;
+    border-radius: 30px;
+    padding: calcRem(20);
+
+    .login-text {
+        color: #5F534C;
+    }
+
+    @include mq('lg') {
+        padding: calcRem(40) calcRem(60);
+        margin: calcRem(30) auto;
+    }
+
+    @include mq('xxl') {
+        padding: calcRem(60);
+        width: 650px;
+    }
+}
+
+.new-dashboard.login {
+    // background: url(../images/Image-44.png);
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    // background-position: center center;
+    // min-height: 100vh;
+
+    background: url(../images/Image-44.png) $brand-color no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}

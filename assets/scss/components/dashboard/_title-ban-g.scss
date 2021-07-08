@@ -1,0 +1,28 @@
+.title-ban-g {
+    background: linear-gradient(60deg, #524B42 0, #7a9ead 30%, #83CDEB 80%);
+    padding: 15px;
+
+    .title-content {
+        display: flex;
+        align-items: center;
+
+        .title,
+        h2 {
+            font-size: calcRem(20);
+            margin-#{$right}: 10px;
+            color: $white;
+
+            @include mq('xxl') {
+                font-size: calcRem(24);
+            }
+        }
+    }
+}
+
+.card-body-title {
+    color: #007CB0;
+}
+.card-body-subtitle {
+    color: #364C2B;
+    font-size: calcRem(16);
+}

@@ -1,0 +1,20 @@
+{
+  "name": "Hossam",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch scss/style.scss:css/style-dashboard.min.css scss/style-rtl.scss:css/style-dashboard-rtl.min.css --style compressed",
+    "cc": "node tools/commands/create_component.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.32.8"
+  }
+}

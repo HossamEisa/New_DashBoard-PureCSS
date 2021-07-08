@@ -1,0 +1,104 @@
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+
+/**
+ * Set up a decent box model on the root element
+ */
+
+:root {
+	font-size: 14px !important;
+
+	@include mq('xl') {
+		font-size: 15px !important;
+	}
+
+	@include mq('xxl') {
+		font-size: 18px !important;
+	}
+}
+
+
+body {
+	direction: $rtl;
+	box-sizing: border-box;
+	color: $text-color;
+	font-family: $droid;
+	background-color: $brand-color;
+	text-align: #{$right};
+	line-height: 1.5;
+}
+
+::selection {
+	background: $selection-color;
+	color: #fff;
+}
+
+/* Safari */
+
+::-moz-selection {
+	background: $selection-color;
+	color: #fff;
+}
+
+/* Firefox */
+
+:-moz-placeholder,
+.form-control::-moz-placeholder {
+	color: $input-placeholder-color;
+}
+
+::-webkit-input-placeholder,
+.form-control::-webkit-input-placeholder {
+	color: $input-placeholder-color;
+}
+
+:-ms-input-placeholder,
+.form-control::-ms-input-placeholder {
+	color: $input-placeholder-color;
+}
+
+/**
+ * Basic styles for links
+ */
+a {
+	color: $brand-color;
+	text-decoration: none;
+
+	@include on-event {
+		color: $text-color;
+		text-decoration: none;
+	}
+}
+
+p {
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+// ScrollBar
+
+// /* width */
+::-webkit-scrollbar {
+	width: 7px;
+	height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	border: #eee 1px solid;
+	background-color: rgb(241 241 241);
+	border-radius: 24px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: rgb(38 27 21 / 0.50);
+	border-radius: 50px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: blue-overlay;
+}

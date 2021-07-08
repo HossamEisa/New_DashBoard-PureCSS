@@ -1,0 +1,43 @@
+// -----------------------------------------------------------------------------
+// This file contains all @font-face declarations, if any.
+// -----------------------------------------------------------------------------
+
+@font-face {
+    font-family: 'droid';
+    src: url("../fonts/ArbFONTS-Droid Arabic Kufi.ttf");
+}
+
+@font-face {
+    font-family: 'droid-b';
+    src: url("../fonts/ArbFONTS-Droid.Arabic.Kufi_.Bold_DownloadSoftware.iR.ttf");
+}
+
+
+@font-face {
+    font-family: 'ge';
+    src: url("../fonts/ArbFONTS-GE-Flow-Regular-1.otf");
+}
+
+
+@font-face {
+    font-family: 'ges-m';
+    src: url("../fonts/GE_SS_Two_Medium.otf");
+}
+
+@font-face {
+    font-family: 'ges-b';
+    src: url("../fonts/GE-SS-Two-Bold.otf");
+}
+
+@font-face {
+    font-family: 'sst';
+    src: url("../fonts/sst-arabic-roman.ttf");
+}
+
+.gs-m {
+    font-family: 'ges-m'!important;
+}
+.num-font {
+    font-family: arial!important;
+    font-weight: bold!important;
+}

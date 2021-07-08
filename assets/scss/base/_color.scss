@@ -1,0 +1,152 @@
+// Here you can put any class effect a color
+//
+
+.brand-color {
+  color: $brand-color !important;
+
+  &::before {
+    color: $brand-color !important;
+  }
+}
+
+/////////////////////////
+// Grey Color
+/////////////////////////
+
+.grey-color {
+  color: #6f778d !important;
+
+  &::before {
+    color: #6f778d !important;
+  }
+}
+
+/////////////////////////
+// Black Color
+/////////////////////////
+
+.black-color {
+  color: #23242e !important;
+
+  &::before {
+    color: #23242e !important;
+  }
+}
+
+/////////////////////////
+// Orange Color
+/////////////////////////
+
+.orange-color {
+  color: #e97d0a !important;
+
+  &::before {
+    color: #e97d0a !important;
+  }
+}
+
+.second-color {
+  color: #E3B472!important;
+}
+/////////////////////////
+// White Color
+/////////////////////////
+.white-color {
+  color: #ffffff !important;
+
+  &::before {
+    color: #ffffff !important;
+  }
+}
+
+/////////////////////////
+// Invalid Color
+/////////////////////////
+.invalid-color {
+  color: $invalid-color !important;
+
+  &::before {
+    color: $invalid-color !important;
+  }
+}
+
+/////////////////////////
+// valid Color
+/////////////////////////
+.valid-color {
+  color: $valid-color !important;
+
+  &::before {
+    color: $valid-color !important;
+  }
+}
+
+.blue-color {
+  color: #007CB0!important;
+}
+
+// /////////////////////////////////// BackGrounds Colors //////////////////////////////////////////
+
+/////////////////////////
+// brand Color gradient
+/////////////////////////
+
+.gr-brandColor {
+  background: blue !important;
+  color: $white !important;
+
+  > span[class^="icon"] {
+    color: $white !important;
+
+    &::before {
+      color: $white !important;
+    }
+  }
+}
+
+/////////////////////////
+// brand Color
+/////////////////////////
+
+.bg-brand {
+  background: $brand-color !important;
+  color: $white !important;
+
+  > span {
+    &::before {
+      color: $white !important;
+    }
+  }
+}
+
+/////////////////////////
+// White Color
+/////////////////////////
+
+.bg-white {
+  background: #ffffff !important;
+  color: $brand-color !important;
+
+  span {
+    &::before {
+      color: $brand-color !important;
+    }
+  }
+}
+
+.bg-warning {
+  background: #d2ac34 !important;
+}
+
+.bg-danger {
+    background: $invalid-color !important;
+  }
+  .bg-grey {
+    background: #F3F3F3 !important;
+  }
+  .bg-second {
+    background: #E3B472 !important;
+  }
+  .text-muted {
+    color: #B5B5C3 !important;
+  }

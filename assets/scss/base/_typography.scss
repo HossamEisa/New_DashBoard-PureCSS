@@ -1,0 +1,193 @@
+/**
+ * Basic typography style for copy text
+ */
+
+ 
+.font-size-base {
+    font-size: 1rem; }
+  
+  .font-size-sm {
+    font-size: 0.925rem; }
+  
+  .font-size-xs {
+    font-size: 0.8rem; }
+  
+  .font-size-lg {
+    font-size: 1.08rem; }
+  
+  .font-size-h1 {
+    font-size: 2rem !important; }
+  
+  .font-size-h2 {
+    font-size: 1.75rem !important; }
+  
+  .font-size-h3 {
+    font-size: 1.5rem !important; }
+  
+  .font-size-h4 {
+    font-size: 1.35rem !important; }
+  
+  .font-size-h5 {
+    font-size: 1.25rem !important; }
+  
+  .font-size-h6 {
+    font-size: 1.175rem !important; }
+  
+  .display1 {
+    font-size: 5.5rem !important; }
+  
+  .display2 {
+    font-size: 4.5rem !important; }
+  
+  .display3 {
+    font-size: 3.5rem !important; }
+  
+  .display4 {
+    font-size: 2.5rem !important; }
+  
+  .display5 {
+    font-size: 2.25rem !important; }
+  
+  @media (min-width: 576px) {
+    .font-size-h1-sm {
+      font-size: 2rem !important; }
+    .font-size-h2-sm {
+      font-size: 1.75rem !important; }
+    .font-size-h3-sm {
+      font-size: 1.5rem !important; }
+    .font-size-h4-sm {
+      font-size: 1.35rem !important; }
+    .font-size-h5-sm {
+      font-size: 1.25rem !important; }
+    .font-size-h6-sm {
+      font-size: 1.175rem !important; }
+    .display1-sm {
+      font-size: 5.5rem !important; }
+    .display2-sm {
+      font-size: 4.5rem !important; }
+    .display3-sm {
+      font-size: 3.5rem !important; }
+    .display4-sm {
+      font-size: 2.5rem !important; }
+    .display5-sm {
+      font-size: 2.25rem !important; } }
+  
+  @media (min-width: 768px) {
+    .font-size-h1-md {
+      font-size: 2rem !important; }
+    .font-size-h2-md {
+      font-size: 1.75rem !important; }
+    .font-size-h3-md {
+      font-size: 1.5rem !important; }
+    .font-size-h4-md {
+      font-size: 1.35rem !important; }
+    .font-size-h5-md {
+      font-size: 1.25rem !important; }
+    .font-size-h6-md {
+      font-size: 1.175rem !important; }
+    .display1-md {
+      font-size: 5.5rem !important; }
+    .display2-md {
+      font-size: 4.5rem !important; }
+    .display3-md {
+      font-size: 3.5rem !important; }
+    .display4-md {
+      font-size: 2.5rem !important; }
+    .display5-md {
+      font-size: 2.25rem !important; } }
+  
+  @media (min-width: 992px) {
+    .font-size-h1-lg {
+      font-size: 2rem !important; }
+    .font-size-h2-lg {
+      font-size: 1.75rem !important; }
+    .font-size-h3-lg {
+      font-size: 1.5rem !important; }
+    .font-size-h4-lg {
+      font-size: 1.35rem !important; }
+    .font-size-h5-lg {
+      font-size: 1.25rem !important; }
+    .font-size-h6-lg {
+      font-size: 1.175rem !important; }
+    .display1-lg {
+      font-size: 5.5rem !important; }
+    .display2-lg {
+      font-size: 4.5rem !important; }
+    .display3-lg {
+      font-size: 3.5rem !important; }
+    .display4-lg {
+      font-size: 2.5rem !important; }
+    .display5-lg {
+      font-size: 2.25rem !important; } }
+  
+  @media (min-width: 1200px) {
+    .font-size-h1-xl {
+      font-size: 2rem !important; }
+    .font-size-h2-xl {
+      font-size: 1.75rem !important; }
+    .font-size-h3-xl {
+      font-size: 1.5rem !important; }
+    .font-size-h4-xl {
+      font-size: 1.35rem !important; }
+    .font-size-h5-xl {
+      font-size: 1.25rem !important; }
+    .font-size-h6-xl {
+      font-size: 1.175rem !important; }
+    .display1-xl {
+      font-size: 5.5rem !important; }
+    .display2-xl {
+      font-size: 4.5rem !important; }
+    .display3-xl {
+      font-size: 3.5rem !important; }
+    .display4-xl {
+      font-size: 2.5rem !important; }
+    .display5-xl {
+      font-size: 2.25rem !important; } }
+  
+  @media (min-width: 1400px) {
+    .font-size-h1-xxl {
+      font-size: 2rem !important; }
+    .font-size-h2-xxl {
+      font-size: 1.75rem !important; }
+    .font-size-h3-xxl {
+      font-size: 1.5rem !important; }
+    .font-size-h4-xxl {
+      font-size: 1.35rem !important; }
+    .font-size-h5-xxl {
+      font-size: 1.25rem !important; }
+    .font-size-h6-xxl {
+      font-size: 1.175rem !important; }
+    .display1-xxl {
+      font-size: 5.5rem !important; }
+    .display2-xxl {
+      font-size: 4.5rem !important; }
+    .display3-xxl {
+      font-size: 3.5rem !important; }
+    .display4-xxl {
+      font-size: 2.5rem !important; }
+    .display5-xxl {
+      font-size: 2.25rem !important; } }
+  
+  .font-weight-boldest {
+    font-weight: 700; }
+  
+  .line-height-0 {
+    line-height: 0; }
+  
+  .line-height-xs {
+    line-height: 0.75; }
+  
+  .line-height-sm {
+    line-height: 1; }
+  
+  .line-height-md {
+    line-height: 1.25; }
+  
+  .line-height-lg {
+    line-height: 1.5; }
+  
+  .line-height-xl {
+    line-height: 1.75; }
+    .font-weight-bold {
+        font-weight: 500 !important;
+    }  

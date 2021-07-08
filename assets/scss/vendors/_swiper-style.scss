@@ -1,0 +1,18 @@
+.swiper-pagination {
+	#{$left}: calcRem(26);
+	bottom: calcRem(20);
+
+	.swiper-pagination-bullet {
+		margin: 0 2.5px;
+		height: calcRem(15);
+		width: calcRem(15);
+		outline: none;
+		opacity: 1;
+		background: $white;
+
+	}
+
+	.swiper-pagination-bullet-active {
+		background: $yellow-color;
+	}
+}

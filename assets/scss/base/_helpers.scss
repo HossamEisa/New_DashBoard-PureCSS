@@ -1,0 +1,99 @@
+// -----------------------------------------------------------------------------
+// This file contains CSS helper classes.
+// -----------------------------------------------------------------------------
+
+
+/**
+ * Main content containers
+ * 1. Make the container full-width with a maximum width
+ * 2. Center it in the viewport
+ * 3. Leave some space on the edges, especially valuable on small screens
+ */
+// .container {
+//   max-width: $max-width; /* 1 */
+//   margin-left: auto; /* 2 */
+//   margin-right: auto; /* 2 */
+//   padding-left: 20px; /* 3 */
+//   padding-right: 20px; /* 3 */
+//   width: 100%; /* 1 */
+//  }
+
+/**
+ * Hide text while making it readable for screen readers
+ * 1. Needed in WebKit-based browsers because of an implementation bug;
+ *    See: https://code.google.com/p/chromium/issues/detail?id=457146
+ */
+.hide-text {
+  overflow: hidden;
+  padding: 0;
+  /* 1 */
+  text-indent: 101%;
+  white-space: nowrap;
+}
+
+/**
+ * Hide element while making it readable for screen readers
+ * Shamelessly borrowed from HTML5Boilerplate:
+ * https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css#L119-L133
+ */
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+
+.ds-highlight {
+  text-align: left;
+  direction: ltr;
+
+
+  pre {
+    font-size: 13px;
+    color: #b3b9c5;
+    direction: ltr;
+    text-align: left;
+    white-space: pre-wrap;
+    word-spacing: normal;
+    word-break: normal;
+    line-height: 1.7;
+    font-weight: 400;
+    margin: 2rem 0;
+    -moz-tab-size: 2;
+    -o-tab-size: 2;
+    tab-size: 2;
+    -webkit-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+    border-radius: 4px;
+    -webkit-font-smoothing: antialiased;
+
+    code {
+      display: block;
+      padding: 1.5rem;
+      overflow: auto;
+      background-color: #333;
+      border: 0;
+      box-shadow: 2px 4px 25px rgba(0, 0, 0, .15);
+    }
+  }
+
+}
+
+
+
+.section {
+  box-shadow: $box-shadow;
+  background-color: $white;
+  padding: 20px;
+  border-radius: 6px;
+}

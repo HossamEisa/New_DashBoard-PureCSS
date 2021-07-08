@@ -1,0 +1,196 @@
+//////////////////////////////////////////////
+// Fonts  Vars 
+//////////////////////////////////////////////
+
+$droid : droid;
+$droid-b : droid-b;
+// $arb : droid-b;
+// $frutiger : Frutiger; 
+// $mont : mont;
+
+
+
+$font-num: Myriad Pro,
+Arial,
+sans-serif;
+$fa : "Font Awesome 5 Brands";
+
+//////////////////////////////////////////////
+/// Regular font family
+/// @type List
+$text-font-stack: 'Open Sans',
+'Helvetica Neue Light',
+'Helvetica Neue',
+'Helvetica',
+'Arial',
+sans-serif !default;
+
+/// Code (monospace) font family
+/// @type List
+
+$code-font-stack: 'Courier New',
+'DejaVu Sans Mono',
+'Bitstream Vera Sans Mono',
+'Monaco',
+monospace !default;
+
+
+///////////////////////
+// Box-Shadow
+///////////////////////
+
+
+// $box-shadow-md: 5px 0px 1rem rgba(44, 44, 44, 0.3);
+$box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.20);
+///////////////////////
+
+
+
+
+//////////////////////////////////////////////
+//Colors Vars
+//////////////////////////////////////////////
+
+/// Main brand color
+/// @type Color
+$brand-color: #261B15 !default;
+
+$second-color: #E7B74F;
+
+$dark : #323232;
+/// Copy text color
+/// @type Color
+$text-color: $second-color !default;
+
+
+/// Main brand color
+/// @type Color
+$aqua-color: #007CB0 !default;
+
+
+/// Main brand color
+/// @type Color
+$sand-color: #b09214 !default;
+
+
+/// Main brand color
+/// @type Color
+$yellow-color: #d2ac34 !default;
+
+
+
+/// Light grey
+/// @type Color
+$light-grey: #ededed !default;
+
+
+
+
+/// Error grey
+/// @type Color
+$invalid-color: #b82932 !default;
+
+
+/// Error grey
+/// @type Color
+$valid-color: #5CB466 !default;
+
+
+$dark-green: #2C5425;
+
+/// Medium grey
+/// @type Color
+$mid-grey: #7C7F9D !default;
+
+
+/// Light grey
+/// @type Color
+$light-grey: #EBEBEB !default;
+
+
+/// Dark grey
+/// @type Color 
+$dark-grey: rgb(68, 68, 68) !default;
+
+
+/// Medium Black
+/// @type Color 
+$meduim-black: #23242E !default;
+
+
+/// Modal grey
+/// @type Color
+$modal-color: rgba(1, 196, 129, 0.80) !default;
+
+
+/// Modal grey
+/// @type Color
+$success-color: rgb(139, 207, 80) !default;
+
+
+/// Orange Color
+/// @type Color
+$warning-color: #F29F29 !default;
+
+
+
+
+//footer Links
+
+$footer-links: #A1A1A1;
+
+$calendar-color: #868FA5;
+
+
+
+/// Relative or absolute URL where all assets are served from
+/// @type String
+/// @example scss - When using a CDN
+///   $base-url: 'http://cdn.example.com/assets/';
+$base-url: '/assets/' !default;
+
+$white: #ffffff;
+$black: #000000;
+$p-color: #676767;
+
+
+$primary-darker: #290d4c;
+$secondary-base: #ddb226;
+$secondary-darker: #2a9da3;
+$brown-color: #5F534C;
+
+$icons-color: #e5b32a;
+
+$selection-color : $brand-color;
+$input-placeholder-color : #868FA5;
+
+
+//////////////////////////////////////////////
+//== Typography
+//////////////////////////////////////////////
+
+
+
+$f-12: 12px !default;
+$f-14: 14px !default;
+$f-16: 16px !default;
+$f-18: 18px !default;
+$f-20: 20px !default;
+$f-22: 22px !default;
+
+$f-24: 24px !default;
+
+$p-font: 17px !default;
+
+$heading1-font: 36px !default;
+$heading2-font: 36px !default;
+$heading3-font: 30px !default;
+$heading4-font: 24px !default;
+
+
+/********************************************/
+
+
+//Border Raduis 
+
+$border-radius: 10px;

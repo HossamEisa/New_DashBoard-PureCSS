@@ -1,0 +1,204 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass mixins.
+// -----------------------------------------------------------------------------
+
+//////////////////////////////////////////////
+/// this mixin to handle all element hover effects
+//////////////////////////////////////////////
+
+@mixin on-event($self: false) {
+  @if $self {
+    &,
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  } @else {
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  }
+}
+
+//
+//////////////////////////////////////////////
+/* CSS - Box Shadow */
+//////////////////////////////////////////////
+
+@mixin box-shadow($shadow) {
+  -webkit-box-shadow: $shadow;
+  -moz-box-shadow: $shadow;
+  -ms-box-shadow: $shadow;
+  box-shadow: $shadow;
+}
+@mixin line-clamp($line) {
+  display: -webkit-box;
+  -webkit-line-clamp: $line;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+//////////////////////////////////////////////
+/* Margin Auto */
+//////////////////////////////////////////////
+
+@mixin auto-margin {
+  display: block;
+  margin-#{$left}: auto;
+  margin-#{$right}: auto;
+}
+//////////////////////////////////////////////
+/* Border-raduis */
+//////////////////////////////////////////////
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  border-radius: $radius;
+}
+//////////////////////////////////////////////
+
+// Single side border-radius
+
+//////////////////////////////////////////////
+
+@mixin border-top-right($radius) {
+  -webkit-border-top-#{$right}-radius: $radius;
+  border-top-#{$right}-radius: $radius;
+}
+
+@mixin border-bottom-right($radius) {
+  -webkit-border-bottom-#{$right}-radius: $radius;
+  border-bottom-#{$right}-radius: $radius;
+}
+
+@mixin border-bottom-left($radius) {
+  -webkit-border-bottom-#{$left}-radius: $radius;
+  border-bottom-#{$left}-radius: $radius;
+}
+
+@mixin border-top-left($radius) {
+  -webkit-border-top-#{$left}-radius: $radius;
+  border-top-#{$left}-radius: $radius;
+}
+
+//////////////////////////////////////////////
+
+// Arrow triangles
+//@include arrow() (up, down, left, right) // @include arrow(up, 10px, #efefef);
+
+//////////////////////////////////////////////
+
+@mixin arrow($direction: down, $size: 5px, $color: #555) {
+  width: 0;
+  height: 0;
+
+  @if ($direction==left) {
+    border-top: $size solid transparent;
+    border-bottom: $size solid transparent;
+    border-right: $size solid $color;
+  } @else if ($direction==right) {
+    border-top: $size solid transparent;
+    border-bottom: $size solid transparent;
+    border-left: $size solid $color;
+  } @else if ($direction==down) {
+    border-left: $size solid transparent;
+    border-right: $size solid transparent;
+    border-top: $size solid $color;
+  } @else {
+    border-left: $size solid transparent;
+    border-right: $size solid transparent;
+    border-bottom: $size solid $color;
+  }
+}
+
+//////////////////////////////////////////////
+//////////////////////////////////////////////
+
+// Mediq Query Mixin
+
+//////////////////////////////////////////////
+//////////////////////////////////////////////
+
+//////////////////////////////////////////////
+// Use this with Mobile First
+//////////////////////////////////////////////
+
+$breakpoints: (
+  "xs": 0,
+  "sm": 576px,
+  "md": 768px,
+  "lg": 992px,
+  "xl": 1200px,
+  "xxl": 1400px,
+);
+
+//use max if use desktop first  --- mobile first change it to min
+@mixin mq($width, $type: min) {
+  @if map_has_key($breakpoints, $width) {
+    $width: map_get($breakpoints, $width);
+
+    @if $type==min {
+      // $width: $width - 1px;
+      $width: $width;
+    }
+
+    @media only screen and (#{$type}-width: $width) {
+      @content;
+    }
+  }
+}
+
+//////////////////////////////////////////////
+// CSS TEXT trim - ellipsis
+//////////////////////////////////////////////
+
+@mixin text-shorten {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@mixin ellipse-rows($num) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $num;
+  -webkit-box-orient: vertical;
+}
+//////////////////////////////////////////////
+
+//Opacity @include opacity(.4);
+//////////////////////////////////////////////
+
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
+}
+//////////////////////////////////////////////
+// Convert px to rem
+//////////////////////////////////////////////
+
+@mixin font-size($size, $base: 14) {
+  // font-size: $size * 1px; // fallback for old browsers
+  font-size: ($size / $base) * 1rem;
+}
+
+//////////////////////////////////////////////
+// TRANSFORM
+//////////////////////////////////////////////
+@mixin transform($option) {
+  -webkit-transform: $option;
+  -moz-transform: $option;
+  -ms-transform: $option;
+  -o-transform: $option;
+  transform: $option;
+}
+@mixin transform-origin($option) {
+  -webkit-transform-origin: $option;
+  -ms-transform-origin: $option;
+  transform-origin: $option;
+}

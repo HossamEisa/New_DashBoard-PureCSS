@@ -1,0 +1,140 @@
+.dash-program-caro {
+    background-color: $white;
+    padding: calcRem(37) calcRem(37) calcRem(22);
+    border-bottom-#{$left}-radius: 35px;
+    border-bottom-#{$right}-radius: 35px;
+
+    .prog-btn-cir {
+        color: $dark;
+        font-size: calcRem(16);
+        display: inline-block;
+        border: 1px solid $yellow-color;
+        border-radius: 50px;
+        text-align: center;
+        padding: 5px 20px;
+
+        span {
+            margin-#{$left}: 10px;
+        }
+
+        &:hover {
+            background-color: $yellow-color;
+            color: $white;
+
+            path {
+                fill: $white;
+            }
+        }
+    }
+}
+
+.dash-warning-carousel {
+    background: linear-gradient(60deg, #524B42 0, #7a9ead 30%, #83CDEB 80%);
+    padding: calcRem(15) calcRem(20);
+    border-radius: 34px;
+    color: $white;
+
+    .alrets {
+        color: $dark;
+        font-size: calcRem(24);
+    }
+
+    .content-d {
+        h2 {
+            font-size: calcRem(24);
+            line-height: 1.5;
+        }
+
+        h6 {
+            font-size: calcRem(16);
+        }
+    }
+
+    .date {
+        font-size: calcRem(18);
+    }
+
+    .caro-control {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.dash-ingaz-carousel {
+    position: relative;
+    background-color: #5F534C;
+    padding: calcRem(20) 25px;
+    border-radius: 5px;
+    border-top-#{$right}-radius: 35px;
+
+    .pers {
+        color: $second-color;
+        font-size: calcRem(30);
+        font-family: $droid-b;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+
+    .content-d {
+        h2 {
+            font-size: calcRem(24);
+            color: $white;
+
+        }
+    }
+
+    .cnt {
+        margin-#{$right}: auto;
+    }
+
+    .carousel-indicators {
+        bottom: -49px;
+    }
+}
+
+
+.last-small-carousel {
+    margin-top: 10px;
+    .icon {
+        margin-#{$left}: 15px;
+        i {
+            font-size: calcRem(40);
+            color: $dark;
+        }
+    }
+
+    .content-g {
+        h2 {
+            color: $dark;
+            margin-bottom: 10px;
+            font-size: calcRem(18);
+        }
+    }
+
+    .cnt {
+        margin-#{$right}: auto;
+    }
+
+    .carousel-indicators {
+        bottom: -40px;
+
+        li {
+            background-color: #261B15;
+            opacity: 0.5;
+
+            &.active {
+                background-color: #261B15;
+                opacity: 1;
+
+            }
+        }
+    }
+}
+
+.carousel-indicators {
+    li {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+    }
+}

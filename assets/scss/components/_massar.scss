@@ -1,0 +1,321 @@
+.massar {
+  &__heading {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 15px 0;
+    color: #fff;
+  }
+
+  &__heading-1 {
+    font-size: 36px;
+    font-weight: normal;
+    color: #707070;
+  }
+
+  &__cards {
+    margin-top: 30px;
+  }
+
+  &__card {
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+
+    &__title {
+      font-size: 24px;
+      font-weight: bold;
+      color: #007cb0;
+      margin-bottom: 15px;
+    }
+
+    &__alert {
+      font-size: 18px;
+      color: #7a7470;
+    }
+
+    &__date {
+      span {
+        font-size: 20px;
+        font-weight: bold;
+        color: #007cb0;
+        display: inline-block;
+
+        &:first-of-type {
+          margin-left: 30px;
+        }
+      }
+    }
+
+    &__content {
+      font-size: 18px;
+      color: #323232;
+
+      span {
+        margin-left: 5px;
+        font-size: 16px;
+      }
+    }
+  }
+
+  &__sessions {}
+
+  &__session {
+    background-color: #fff;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    // padding: 0 30px;
+
+    &__header {
+      padding: 15px 0;
+      background-color: #f6f5f5;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+    }
+
+    &__title {
+      font-size: 28px;
+      font-weight: bold;
+      color: #007cb0;
+      display: flex;
+      align-items: center;
+
+      img {
+        margin-left: 15px;
+      }
+    }
+
+    &__season {
+      font-size: 20px;
+      font-weight: bold;
+      color: #007cb0;
+    }
+
+    &__body {
+      padding: 20px;
+      display: flex;
+    }
+
+    &__time {
+      font-size: 14px;
+      font-weight: bold;
+      color: #5f534c;
+      flex: 1;
+      text-align: center;
+    }
+
+    &__description {
+      font-size: 18px;
+      color: #323232;
+      flex: 5;
+      line-height: 30px;
+    }
+
+    &__footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+
+      h2 {
+        font-weight: bold;
+        font-size: 18px;
+        color: #5f534c;
+        cursor: pointer;
+      }
+
+      i {
+        margin: 0 10px;
+      }
+    }
+  }
+
+  &__toggle-days {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h2 {
+      font-size: 18px;
+      font-weight: bold;
+      color: #5f534c;
+      cursor: pointer;
+    }
+  }
+
+  &__calender {
+    margin-top: 30px;
+
+    &__days {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    &__no-data {
+      font-size: 15px;
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    &__day {
+      background-color: #413934;
+      color: #fff;
+      border-radius: 20px;
+      padding: 20px 15px;
+      width: 31%;
+      margin-left: 15px;
+      margin-bottom: 15px;
+      transition: all 0.5s ease-in-out;
+
+      &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      &__number {
+        font-size: 60px;
+        font-weight: bold;
+        margin-right: 20px;
+      }
+
+      &__name {
+        font-size: 24px;
+        font-weight: bold;
+        color: #ffcda3;
+      }
+
+      &__body {}
+
+      &:hover {
+        cursor: pointer;
+        background-color: #404092;
+      }
+    }
+  }
+
+  &__lectures {}
+
+  &__lecture {
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #c7b7ac;
+    margin-bottom: 15px;
+
+    &__heading {
+      font-size: 22px;
+      font-weight: bold;
+      color: #007cb0;
+      margin-bottom: 10px;
+    }
+
+    &__heading-1 {
+      font-size: 18px;
+      font-weight: bold;
+      color: #5f534c;
+    }
+
+    &__attachment {
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    &__name {
+      font-size: 17px;
+      font-weight: bold;
+      color: #007cb0;
+    }
+
+    &__duration {
+      display: block;
+      font-size: 21px;
+      font-weight: normal;
+      color: #413934;
+      margin-top: 10px;
+    }
+
+    &__check {
+      min-width: 20px;
+      height: 20px;
+      border: 2px solid #707070;
+    }
+
+    &__image {
+      margin: 0 15px;
+    }
+
+    &--done {
+      background-color: #ef4f4f;
+
+      .massar__lecture__heading,
+      .massar__lecture__name {
+        color: #2a0aad;
+      }
+
+      .massar__lecture__heading-1 {
+        color: #ffcda3;
+      }
+    }
+
+    &--in-progress {
+      background-color: #ffcda3;
+    }
+
+    &--coming {
+      background-color: #37e237;
+    }
+  }
+}
+
+@media screen and(max-width: 991px) {
+  .massar {
+    &__calender {
+      &__day {
+        width: 47%;
+      }
+    }
+  }
+}
+
+@media screen and(max-width: 768px) {
+  .massar {
+    &__session {
+      &__header {
+        flex-direction: column;
+      }
+
+      &__body {
+        flex-direction: column;
+      }
+
+      &__footer {
+        flex-direction: column;
+        align-items: flex-start;
+
+        h2 {
+          margin-bottom: 20px;
+        }
+      }
+    }
+
+    &__calender {
+      &__day {
+        width: 100%;
+        margin-left: 0;
+      }
+    }
+  }
+}

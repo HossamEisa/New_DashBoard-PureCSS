@@ -1,0 +1,147 @@
+.dash-tabs {
+    justify-content: center;
+    margin-bottom: 20px;
+
+    .nav-item {
+        .nav-link {
+            border-radius: 50px;
+            border: 1px solid $second-color;
+            color: $dark;
+            font-family: $droid-b;
+            padding: 0.45rem 1.4rem;
+
+            &:hover {
+                background-color: $second-color;
+                color: $white !important;
+            }
+
+            &.active {
+                background-color: $second-color;
+                color: $white !important;
+            }
+        }
+
+        margin-#{$left}: 15px;
+
+        &:last-child {
+            margin-#{$left}: 0;
+        }
+
+    }
+
+    &.large {
+        justify-content: flex-start;
+
+        .nav-item {
+            margin-left: 5px;
+
+            &:last-child {
+                margin-left: 0;
+            }
+
+            @include mq('sm') {
+                margin-left: 15px;
+            }
+
+            .nav-link {
+                color: $white;
+                font-size: calcRem(12);
+                border-radius: 35px;
+                margin-bottom: 10px;
+                padding: 10px;
+
+                @include mq('sm') {
+                    padding: 1.3rem 1.8rem;
+                    font-size: calcRem(16);
+
+                }
+
+                @include mq('xl') {
+                    font-size: calcRem(18);
+                    font-family: $droid-b;
+                    border: 2px solid $second-color;
+                }
+
+                @include mq('xxl') {
+                    padding: 1.94rem 2.1rem;
+                }
+            }
+        }
+
+    }
+}
+
+.tab-content {
+    color: initial
+}
+
+.dash-tabs-content-item {
+    margin-bottom: 10px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    a {
+        display: block;
+        padding: 10px;
+        border-radius: 8px;
+        background-color: $white;
+        color: #364C2B;
+        font-family: ges-m;
+
+        &:hover {
+            background-color: $second-color;
+        }
+
+        .title {
+            margin-bottom: 5px;
+            font-size: calcRem(16);
+        }
+
+        .time {
+            font-family: $font-num;
+        }
+    }
+}
+
+// 
+
+.small-dash-tabs {
+    margin-bottom: calcRem(35);
+    border-bottom: 1px solid #707070;
+ .nav-item {
+    .nav-link {
+        color: #8A8A8A;
+        padding: .5rem 0.2rem;
+        margin: 0 calcRem(20);
+      
+        &.active {
+            position: relative;
+            color: $white!important;
+
+            &::after {
+                content: "";
+                height: 3px;
+                position: absolute;
+                right: 0;
+                bottom: -2px;
+                width: 100%;
+                background-color: $second-color;
+                border-radius: 50px;
+            }
+        }
+    }
+    &:first-child {
+        .nav-link {
+            margin-#{$right}: 0;
+        }
+    }
+    &:last-child {
+        .nav-link {
+            margin-#{$left}: 0;
+        }
+    }
+ }
+   
+}

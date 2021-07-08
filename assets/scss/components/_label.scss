@@ -1,0 +1,40 @@
+.label {
+    padding: 0;
+    margin: 0;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    font-size: 0.8rem;
+    background-color: #ECF0F3;
+    color: #464E5F;
+    font-weight: 400;
+    height: 20px;
+    width: 20px;
+    font-size: 0.8rem;
+
+  
+
+    &.label-inline {
+        width: auto;
+        padding: 0.15rem 0.75rem;
+        border-radius: 0.42rem;
+    }
+    &.label-pill {
+        border-radius: 2rem;
+    }
+
+    &.label-outline-warning {
+        background-color: transparent;
+        color: #FFA800;
+        border: 1px solid #FFA800;
+    }
+}

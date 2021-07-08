@@ -1,0 +1,78 @@
+.hero-section {
+    position: relative;
+    padding: 35px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    @include mq('md') {
+    min-height: calcRem(300);
+
+    }
+
+    &::after {
+        position: absolute;
+        z-index: 1;
+        content: '';
+        background-image: url(../images/blog-overlay.png);
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 5px;
+
+    }
+
+    >* {
+        position: relative;
+        z-index: 2;
+    }
+
+    .hero-content {
+        text-align: center;
+        color: $white;
+
+        .title {
+            font-size: calcRem(35);
+            font-family: 'droid-b';
+            margin-bottom: 15px;
+        }
+
+        .sub-title {
+            margin-bottom: 15px;
+            font-size: calcRem(18);
+
+        }
+    }
+
+    .hero-control {
+        align-self: flex-end;
+    }
+
+}
+
+.fourm-list {
+    &__item {
+        background-color: $white; 
+        border-radius: 10px;
+        padding: 10px calcRem(15);
+        margin-bottom: calcRem(15);
+        &.child {
+            background-color: #FFF9F1;
+        }
+        img {
+            object-fit: cover;
+            width: 100%; 
+            max-width: 75px;
+            height: 75px;
+            border-radius: 50%;
+        }
+    }
+}

@@ -1,0 +1,70 @@
+@charset 'UTF-8';
+//Helper 
+@import "helper/_directions";
+
+// 1. Configuration and helpers
+@import 'abstracts/functions',
+'abstracts/mixins';
+
+// 2. Vendors
+@import 'vendors/animate',
+'vendors/nice-select',
+'vendors/icons',
+'vendors/grid-xxl',
+'vendors/swiper-style';
+
+
+
+// 3. Base stuff
+@import 'base/rest',
+'base/normalize',
+'base/color',
+'base/base',
+'base/hover',
+'base/fonts',
+'base/typography',
+'base/helpers',
+'base/IE-FixStyle';  
+
+
+
+
+
+// Dashboard
+@import 'components/dashboard/dashbored-user'; 
+@import 'components/dashboard/title-ban-g'; 
+@import 'components/dashboard/dash-program-caro'; 
+@import 'components/dashboard/dash-todo'; 
+@import 'components/dashboard/ticket-btn'; 
+@import 'components/dashboard/calendar'; 
+@import 'components/dashboard/events'; 
+@import 'components/dashboard/dash-tabs'; 
+@import 'components/dashboard/notifi-card';
+@import 'components/dashboard/dash-table';
+@import 'components/dashboard/inbox';
+@import 'components/dashboard/dash-data-table'; 
+@import 'components/dashboard/fourm';
+@import 'components/dashboard/pagination';
+@import 'components/dashboard/program-details-item';
+
+
+
+@import 'components/breadcrumb';
+@import 'components/button';
+@import 'components/controlls';
+@import 'components/checkbox';
+@import 'components/label';
+@import 'components/notification-center';
+@import 'components/wizard-tabs';
+@import 'components/massar'; 
+
+
+@import 'general-styles'; 
+
+
+// 5. Layout-related sections 
+@import 'layout/header',
+'layout/footer',
+'layout/login',
+'layout/dash-main';
+
