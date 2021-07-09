@@ -88,12 +88,14 @@
                     z-index: 3;
                     position: relative;
 
-                    i {
-                        color: $white;
 
+
+
+                    i {
+                        color: $text-color
                     }
 
-                    span {
+                    >span {
                         margin-#{$right}: calcRem(14);
                     }
 
@@ -113,18 +115,32 @@
                             position: absolute;
                             #{$left}: 0;
                             margin-#{$right}: calcRem(10);
+                            border: none;
+                            content: "\f078";
+                            font-family: "Font Awesome 5 Free";
+                            font-weight: 900;
                         }
                     }
+
+                    &:hover {
+                        color: $second-color;
+
+                        i {
+                            color: $second-color;
+
+                        }
+                    }
+
                 }
 
                 .dropdown-menu {
                     position: static !important;
                     float: none;
-                    background: rgb(38 27 21 / 26%);
+                    // background: rgb(38 27 21 / 26%);
                     // background: #5f534c;
-                    color: #fff;
                     transform: none !important;
                     width: 100% !important;
+                    border: none;
 
                     li {
                         display: block;
@@ -137,25 +153,43 @@
                         }
                     }
 
-                    a {
+                    a,
+                    .dropdown-item {
                         font-size: calcRem(14);
-                        color: $white;
                         font-family: $droid;
                         white-space: pre-wrap;
                         text-align: $right;
                         position: relative;
-                        border-bottom: 1px solid rgba(255, 255, 255, .05);
                         display: flex;
                         align-items: center;
                         border-radius: 0;
-                        padding: 10px;
-                        border-bottom: 1px solid rgba(255, 255, 255, .05);
                         font-size: .8333333333rem;
                         font-family: droid;
-                        color: #fff;
                         z-index: 3;
                         position: relative;
+                        padding-#{$right}: calcRem(30);
 
+                        &::before {
+                            content: "•";
+                        }
+
+                        &:active {
+                            background: none;
+                        }
+
+                        &.active {
+                            background: transparent;
+                            color: $second-color;
+                        }
+
+                        &:hover {
+                            color: $second-color;
+
+                            i {
+                                color: $second-color;
+
+                            }
+                        }
 
                         .icon {
                             display: inline-flex;
@@ -180,48 +214,47 @@
                             font-size: calcRem(16);
                         }
 
-                        &:hover {
-                            background-color: $second-color;
-                        }
-                    }
-                }
-
-                &:hover {
-                    a {
-                        color: $white;
-                    }
-
-                    &::after {
-                        position: absolute;
-                        content: "";
-                        background-color: $second-color;
-                        height: calcRem(40);
-                        top: calcRem(10);
-                        #{$right}: 0;
-                        #{$left}: 0;
-                        width: 105%;
-                        z-index: 1;
-                        border-top-#{$left}-radius: 50px;
-                        border-bottom-#{$left}-radius: 50px;
                     }
                 }
 
                 &.active {
-                    a {
-                        color: $white;
+                    .sidemenu-link {
+                        color: $second-color;
+
+                        i {
+                            color: $second-color;
+
+                        }
                     }
+
+                    // &::after {
+                    //     position: absolute;
+                    //     content: "";
+                    //     background-color: $second-color;
+                    //     height: calcRem(40);
+                    //     top: calcRem(10);
+                    //     #{$right}: 0;
+                    //     #{$left}: 0;
+                    //     width: 105%;
+                    //     z-index: 1;
+                    //     border-top-#{$left}-radius: 50px;
+                    //     border-bottom-#{$left}-radius: 50px;
+                    // }
+                }
+            }
+
+            .dropdown {
+                .sidemenu-link {
                     &::after {
-                        position: absolute;
-                        content: "";
-                        background-color: $second-color;
-                        height: calcRem(40);
-                        top: calcRem(10);
-                        #{$right}: 0;
-                        #{$left}: 0;
-                        width: 105%;
-                        z-index: 1;
-                        border-top-#{$left}-radius: 50px;
-                        border-bottom-#{$left}-radius: 50px;
+                        transition: .5s ease-in-out;
+                    }
+                }
+
+                &.show {
+                    .sidemenu-link {
+                        &::after {
+                            transform: rotate(180deg);
+                        }
                     }
                 }
             }
@@ -238,7 +271,7 @@
             margin: 30px;
 
             &:hover {
-                background-color:  $second-color;
+                background-color: $second-color;
                 color: $white
             }
         }
