@@ -1,3 +1,4 @@
+// $.noConflict();
 (function ($) {
     setTimeout(function (param) {
 
@@ -187,6 +188,8 @@
     $('.dash-sidebar .dropdown').on('hide.bs.dropdown', function () {
         $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
     });
+
+
     // Fixed menu on scroll
 
     $(window).scroll(function () {
@@ -200,4 +203,8 @@
     $('.dash-sidebar').animate({
         scrollTop: $(".dash-sidebar li.active").offset().top - 120
     }, 2000);
+
+    $(document).on('click', '.dash-sidebar .dropdown-menu', function (e) {
+        e.stopPropagation();
+    });
 })(jQuery);
