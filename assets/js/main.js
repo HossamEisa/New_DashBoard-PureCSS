@@ -1,4 +1,3 @@
-// $.noConflict();
 (function ($) {
     setTimeout(function (param) {
 
