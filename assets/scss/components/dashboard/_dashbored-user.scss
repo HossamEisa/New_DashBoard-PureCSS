@@ -6,14 +6,14 @@
     position: relative;
 
     .image {
-        width: calcRem(139);
-        height: calcRem(165);
+        max-width: calcRem(139);
+        // height: calcRem(165);
         border-top-#{$left}-radius: 35px;
         overflow: hidden;
 
         @include mq('xxl') {
-            width: calcRem(179);
-            height: calcRem(195);
+            // width: calcRem(179);
+            // height: calcRem(195);
         }
 
         img {
@@ -24,7 +24,7 @@
     }
 
     .dash-user-ul {
-        padding: calcRem(20) calcRem(30) calcRem(20) calcRem(35);
+        padding: calcRem(30) calcRem(30) calcRem(20) calcRem(35);
 
 
         .user-name {
@@ -72,7 +72,7 @@
     .dash-user-setting {
         position: absolute;
         #{$left}: 15px;
-        top: 20px;
+        top: -2px;
 
         i {
             color: #707070;
