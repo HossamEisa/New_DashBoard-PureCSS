@@ -31,12 +31,11 @@
         background: $white;
         background-size: 200% auto;
         height: 100%;
-        width: calcRem(270);
         min-width: calcRem(270);
         flex: 0 0 calcRem(270);
         z-index: 6;
         width: calcRem(270);
-        transition: all .2s;
+        transition: all 0.5s ease-in-out;
         box-shadow: 7px 0 60px rgba(0, 0, 0, 0.05);
         border-top-#{$left}-radius: 10px;
         position: fixed;
@@ -44,29 +43,36 @@
         overflow-x: hidden;
         direction: $ltr;
         #{$right}: -100%;
-        top: 85px;
+        top: 120px;
+
+        &::-webkit-scrollbar {
+            width: 4px;
+            height: 6px;
+        }
+
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+            background: rgb(38 27 21 / 0.25);
+        }
+
 
         &.open {
             #{$right}: 0;
             z-index: 666;
         }
 
-        @include mq('md') {
-            top: 110px;
+        @include mq('xxl') {
+            top: 136px;
             height: calc(100vh - 110px);
         }
 
         @include mq('lg') {
-            display: table-cell;
-            position: static;
-            overflow-x: visible;
-            vertical-align: top;
-
+            #{$right}: 0;
             &.closed {
-                position: absolute;
                 #{$right}: -100%;
             }
         }
+
 
         >ul {
             width: 100%;
@@ -276,6 +282,11 @@
             }
         }
 
+        &.fixed {
+            height: 100vh;
+            top: 0;
+        }
+
     }
 
     .dash-sidecontent {
@@ -288,6 +299,7 @@
         padding-#{$left}: calcRem(20);
         padding-#{$right}: calcRem(20);
         padding-bottom: calcRem(40);
+        transition: all 0.5s ease-in-out;
 
         @include mq('md') {
             padding-#{$left}: calcRem(40);
@@ -296,19 +308,31 @@
         }
 
         @include mq('lg') {
-            display: table-cell;
-            vertical-align: top;
-            padding-#{$right}: calcRem(40);
+            padding-#{$right}: calcRem(300);
             padding-bottom: calcRem(90);
 
         }
 
-        @include mq('xxl') {
-
+        @include mq('xl') {
             padding: 0 calcRem(58);
+            padding-#{$right}: calcRem(300);
             padding-bottom: calcRem(90);
 
         }
 
+    }
+    &.closed {
+        .dash-sidecontent {
+            padding-#{$right}: calcRem(20);
+        }
+    }
+}
+
+.new-dashboard.overflow-hidden {
+    .dash-header, .dash-sidecontent {
+        opacity: 0.5;
+        @include mq('lg') {
+            opacity: 1;
+        }
     }
 }

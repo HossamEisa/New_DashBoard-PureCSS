@@ -57,7 +57,7 @@
 							<div class="dropdown  pr-xl-5">
 								<!--begin::Toggle-->
 								<div class="topbar-item" data-toggle="dropdown" data-offset="10px,0px">
-									<div class="d-flex align-items-center white-color">
+									<div class="d-flex align-items-center ">
 										<img src="./assets/images/usa-flag.svg" alt="...">
 										<span class="d-block">English</span>
 									</div>
@@ -292,7 +292,7 @@
 	<div class="dash-main">
 		<div class="dash-sidebar">
 			<ul>
-				<li class="active">
+				<li>
 					<a href="" class="sidemenu-link">
 						<div class="icon">
 							<i class="fas fa-home"></i>
@@ -303,12 +303,12 @@
 				<li>
 					<a href="" class="sidemenu-link">
 						<div class="icon">
-							<img src="./assets/images/program.svg" alt="">
+							<span class="icon-program"></span>
 						</div>
 						<span>البرامج</span>
 					</a>
 				</li>
-				<li>
+				<li >
 					<div class="dropdown">
 						<a href="#" class="sidemenu-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
 							aria-expanded="false">
@@ -317,9 +317,9 @@
 							</div>
 							<span>حقيبة الطالب</span>
 						</a>
-						<div class="dropdown-menu">
+						<div class="dropdown-menu show">
 							<a class="dropdown-item" href="#">حقيبة</a>
-							<a class="dropdown-item" href="#">الطالب</a>
+							<a class="dropdown-item active" href="#">الطالب</a>
 							<a class="dropdown-item" href="#">الطالب ال طالب الط البا لطا لبالطا لبالط الب</a>
 						</div>
 					</div>
@@ -327,7 +327,7 @@
 				<li>
 					<a href="" class="sidemenu-link">
 						<div class="icon">
-							<img src="./assets/images/mytasks.svg" alt="">
+							<span class="icon-mytasks"></span>
 						</div>
 						<span>مهامي</span>
 					</a>
@@ -340,10 +340,10 @@
 						<span>الأحداث والفعاليات</span>
 					</a>
 				</li>
-				<li>
+				<li  class="active">
 					<a href="" class="sidemenu-link">
 						<div class="icon">
-							<img src="./assets/images/plan0icon.svg" alt="">
+							<span class="icon-noun_Planning_2520360"></span>
 						</div>
 						<span>المخطط التعليمي</span>
 					</a>
@@ -351,7 +351,7 @@
 				<li>
 					<a href="" class="sidemenu-link">
 						<div class="icon">
-							<img src="./assets/images/noun_Document_1212460.svg" alt="">
+							<span class="icon-noun_Document_1212460"></span>
 						</div>
 						<span>المكتبة الرقمية</span>
 					</a>
@@ -359,7 +359,7 @@
 				<li>
 					<a href="" class="sidemenu-link">
 						<div class="icon">
-							<img src="./assets/images/noun_e-book_3410217.svg" alt="">
+							<span class="icon-noun_e-book_3410217"></span>
 						</div>
 						<span>المقرأة الرقمية</span>
 					</a>
@@ -375,7 +375,7 @@
 				<li>
 					<a href="" class="sidemenu-link">
 						<div class="icon">
-							<img src="./assets/images/Icon awesome-certificate.svg" alt="">
+							<span class="icon-Icon-awesome-certificate"></span>
 						</div>
 						<span>الشهادات</span>
 					</a>
@@ -1027,7 +1027,7 @@
 								</div>
 								<div>
 									<div
-										class="px-4 py-2  text-center border border-2 border-white rounded-lg opacity-90">
+										class="px-4 py-2  text-center  rounded-lg opacity-90">
 										<h6 class="">50 / 60</h6>
 										<p class="">درجة</p>
 									</div>
@@ -1624,7 +1624,7 @@
 								<span class="badge badge-dark p-2">Dark</span>
 							</div>
 							<div class="d-flex align-items-center justify-content-end ml-2">
-								<a href="#" class="p-1 btn btn-icon btn-sm white-color" data-card-tool="remove">
+								<a href="#" class="p-1 btn btn-icon btn-sm " data-card-tool="remove">
 									<span class="delete-icon"><i class="fas fa-times"></i></span>
 								</a>
 								<a href="#"
@@ -1676,7 +1676,7 @@
 					<div class="mb-4 draggable" data-card="true" data-card-tool="remove" id="kt_card_3">
 						<div class="card-header border-0 bg-transparent p-0 zindex-2 position-relative">
 							<div class="d-flex align-items-center justify-content-end ml-2 position-absolute" style="z-index: 9; left: 10px; top: 5px;">
-								<a href="#" class="p-1 btn btn-icon btn-sm white-color" data-card-tool="remove">
+								<a href="#" class="p-1 btn btn-icon btn-sm " data-card-tool="remove">
 									<span class="delete-icon"><i class="fas fa-times"></i></span>
 								</a>
 								<a href="#"
@@ -2042,7 +2042,7 @@
 									<div class="col mr-2 d-flex align-items-center">
 										<div class="title-content">
 											<img src="./assets/images/noun_path_3235074.png" alt="">
-											<h2 class="title font-size-lg font-size-h6-xxl white-color">المسار التعليمي
+											<h2 class="title font-size-lg font-size-h6-xxl ">المسار التعليمي
 												للبرنامج
 											</h2>
 										</div>
@@ -2246,6 +2246,7 @@
 			todayHighlight: true,
 			toggleActive: true,
 			maxViewMode: 0,
+			weekStart: 2,
 			beforeShowDay: function (date) {
 				var dateStr = date.getDate() + '-' + (date.getMonth() + 1) + '-' + date.getFullYear();
 				var beforeShowDayObj;
